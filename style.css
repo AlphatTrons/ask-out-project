@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdf6f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 55px;
+    background: #f75291;
+background: -webkit-linear-gradient(91deg, #f75291 0%, #035edc 100%);
+background: linear-gradient(91deg, #f75291 0%, #035edc 100%);
+    max-width: 500px;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #5a2930;
+    margin-bottom: 10px;
+}
+
+.message {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* General styling for buttons */
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff5e57; /* Bright, attractive red */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect */
+button:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Click (active) effect */
+button:active {
+    transform: scale(0.95); /* Shrink slightly on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Soften shadow on click */
+}
+
+/* Unique animations for 'Yes' button */
+#yes-btn {
+    background-color: #28a745; /* Green for positivity */
+    animation: pulse 1.5s infinite; /* Subtle pulse animation */
+}
+
+/* Keyframes for pulse effect */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Unique animations for 'No' button */
+#no-btn, #convince-no-btn {
+    background-color: #000000; /* Blue for attention */
+    animation: shake 0.5s infinite; /* Fun shake effect */
+}
+
+/* Keyframes for shake effect */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+}
+
+/* Styling for hidden buttons initially */
+.hidden {
+    display: none;
+}
+
+/* Styling for the convincing section */
+.convince-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Convince message style */
+.convince-message {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Add spacing between Yes and No buttons */
+#yes-btn {
+    margin-right: 30px; /* Adds space to the right of the 'Yes' button */
+}
+
+/* You can also add some margin to the No button if needed */
+#no-btn {
+    margin-left: 30px; /* Adds space to the left of the 'No' button */
+}
+/* Background gradient animation */
+@keyframes gradientAnimation {
+    0% { background: #ff5e57; }
+    25% { background: #ffdcd5; }
+    50% { background: #ff8d87; }
+    75% { background: #ff554d; }
+    100% { background: #ff3d33; }
+}
+
+body {
+    animation: gradientAnimation 8s infinite;
+}
